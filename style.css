@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 120px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 2px solid #6f95ff;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #413b6b;
+}
+
+header p{
+  color: #413b6b;
+}
+
+/*------------------Button dark mode------------------*/
+.button-mode {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.trilho {
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  background-color: #9c9c9c;
+  border-radius: 150px;
+  position: relative;
+  cursor: pointer;
+}
+
+.trilho .indicador {
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0.9);
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+}
+
+.trilho.dark {
+  background-color: #494949;
+}
+
+.trilho.dark .indicador {
+  left: 25px;
+  background-color: #1d1d1d;
+}
+
+body.dark {
+  background: #1d1d1d;
+}
+
+
+#perf.dark, #txt.dark, #fim.dark{
+    color: #5d7dd6;
+}
+/*-----------------------------------------------*/
+
+section.buttons-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link{
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.link button {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s;
+}
+
+a.link i {
+  font-size: 1.3em;
+}
+
+a.link button:hover {
+  transform: scale(1.05);
+}
+
+.degrade {
+  background: linear-gradient(to right, #5c65c0, #6f95ff);
+}
+
+footer {
+  text-align: center;
+  margin: 30px;
+  color: #413b6b;
+}
